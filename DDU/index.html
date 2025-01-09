@@ -2,51 +2,113 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./src/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
-  </head>
-  <style>
-    .nav1{
-      /* flex-grow: 5; */
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
 
-    }
-  </style>
+      header {
+        background-color: orangered;
+        height: 100px;
+      }
+
+      #logo_nav {
+        padding: 40px 0px 0px 100px;
+        display: flex;
+      }
+
+      #univ_name {
+        text-transform: uppercase;
+        color: white;
+        margin-top: 3px;
+        padding-left: 15px;
+        font-size: 25px;
+      }
+
+      nav {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto auto auto;
+        background-color: black;
+        opacity: 0.5;
+        color: white;
+        font-size: 18px;
+        height: 40px;
+        text-align: center;
+        padding-top: 15px;
+        position: sticky;
+        margin-top: 10px;
+      }
+
+      #technology {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: max-height 0.5s , opacity 0.5s ;
+      }
+
+      #technology:target {
+        max-height: 500px; /* Adjust based on content */
+        opacity: 1;
+      }
+
+      #technology div {
+        display: flex;
+        background-color: black;
+        color: white;
+      }
+
+      #technology img {
+        height: 50px;
+        margin: 10px;
+      }
+
+      #technology ul {
+        margin-left: 100px;
+      }
+
+      #technology ul li {
+        list-style: none;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
 
   <body>
-
-    <header >
-
+    <header>
       <div id="logo_nav">
-
         <img src="./images/ddu_logo.png" alt="ddu_logo" style="height: 35px; width: 35px;">
-        <span id="univ_name">Dharmsinh desai University</span>
-
-        <div  id="nav1">
-          <span>NIRF</span>
-          <span>IQAC</span>
-          <span>Excellence Centers</span>
-          <span>DDU Connect</span>
-          <span>Contact Us</span>
-          <input type="text" name="search" id="search" style="margin-top: -5px; height: 25px;" placeholder="search"><i class="fas fa-search" style="color: black;"></i>
-
+        <span id="univ_name">Dharmsinh Desai University</span>
       </div>
-
-      </div>
-
-
     </header>
 
-    <nav >
-      <span>DDU Advantage</span>
-      <span>University</span>
-      <span>Technology</span>
-      <span>Dental Science</span>
-      <span>Pharmacy</span>
-      <span>Mgmt & Info Science</span>
-      <span>Medical Science</span>
-      <span></span>
+    <nav>
+      <a href="#technology">Technology</a>
     </nav>
 
+    <div id="technology">
+      <div>
+        <div>
+          <img src="./images/ddu_logo.png" alt="dduimg">
+        </div>
+        <div>
+          <ul>
+            <li>Overview</li>
+            <li>Academics</li>
+            <li>Admissions</li>
+            <ul>
+              <li>Computer Engineering</li>
+              <li>Chemical Engineering</li>
+              <li>Electrical Engineering</li>
+              <li>Mechanical Engineering</li>
+              <li>Biotechnology</li>
+              <li>Industrial Engineering</li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
