@@ -6,7 +6,7 @@
 
 header{
   background-color: orangered;  
-  height: 100px;
+  height: 120px;
 }
 
 #logo_nav{
@@ -22,18 +22,121 @@ header{
   font-size: 25px;
 }
 
-#nav{
+#nav1{
   margin: 3px 0px 0px 150px; 
   display: grid; 
-  grid-template-columns: auto auto auto auto auto auto; 
+  grid-template-columns: auto auto auto auto auto auto auto; 
   width: 750px;
   color: white;
   font-size: 20px;
 }
 
+#nav_hide{
+  display: none;
+}
+
+.menu{
+  color: orangered;
+}
+
+#searchicon{
+  background-color: rgb(247, 247, 247);
+  margin: -4px 10px 9px 0px;
+  text-align: center;
+}
+
+#scroll_up{
+  height: 40px;
+  width: 40px;
+  background-color: orangered;
+  bottom: 20px; 
+  right: 30px;
+  position: fixed;
+}
+
+.techicon
+{
+  border: 2px solid red;
+  justify-content: center;
+  margin: 10px 0px 0px 300px;
+  border-radius: 50%;
+  scale: 1.5;
+
+}
+
+#Technology {
+  height: 0;
+  /* max-width: 0; */
+  overflow: hidden;
+  opacity: 0;
+  transition-property: height;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  /* transition-delay: 1s; */
+}
+
+#Technology:target {
+  /* max-width: fit-content; */
+  height: 250px;
+  opacity: 1;
+}
+
+#tec_img{
+  height: 177px;
+}
+
+.tech{
+  
+  display: flex;
+  background-color: black;
+  height: 13.4rem;
+  color: white;
+  font-weight: bold;
+  border: 2px solid red;
+
+}
+
+.block *
+{
+  margin-left: 20px;
+  opacity: 1;
+  margin-right: 20px;
+  display: block;
+
+}
+
+
+ul{
+  list-style-type: none;
+  margin-top: 0px;  
+  padding-top: 0;
+overflow: hidden;
+background-color: black;
+opacity: 0.5;
+position: sticky;
+top: 0;
+width: 100%;
+}
+
+li{
+  display: inline-block;
+ 
+}  
+
+li * {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-left: 110px;
+  opacity: 1;
+
+}  
+
 nav{
   display: grid; 
-  grid-template-columns: auto auto auto auto auto auto auto auto; 
+  grid-template-columns: auto auto auto auto auto auto auto auto auto; 
   background-color: black; 
   opacity: 0.5; 
   color: white; 
@@ -41,7 +144,386 @@ nav{
   height: 40px; 
   text-align: center; 
   padding-top: 15px;
+  top: 0px;
   position: sticky;
   margin-top: 10px;
+}  
+
+#front_img{
+  height: 900px;
+  background-image: url(../images/ddu_img.jfif);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-top: -40px;
+  background-position: center;
+}
+
+#vc_img{
+  margin: 25% 0 0 23%;
+  height: 300px;
+  width: 250px;
+}  
+
+#vc_desc{
+  opacity: 0.5;
+  background-color: black;
+  color: white;
+  height: fit-content;
+  width: 300px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px 0px 0px 420px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  font-family: sans-serif;
+}  
+
+section{
+  text-align: center;
+  margin-top: -40px;
+
+}  
+
+
+.dot{
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: grey;
+  border: 1px solid white;
+}  
+
+.ddu_adv{
+  height: 220px; 
+  width: 550px;
+  border-right: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+
+  margin-top: 30px;
+}  
+
+.adv_score{
+  padding-top: 40px;
+  font-size: 70px;
+  color: orangered;
+  text-align: center;
+}  
+
+.adv_desc{
+  text-align: center;
+  color: grey;
+  font-size: 15px;
+  padding-bottom: 10px;
+  margin-left: 170px;
+  width: 200px;
+}  
+
+article{
+  display: grid;
+  margin: 0px 100px 0px 100px;
+  grid-template-columns: auto auto auto;
+  font-family: sans-serif;
+
+}  
+
+.icon_size{
+  margin-top: 30px;
+  color: lightgrey;
+  scale: 6;
+}  
+
+#vc_intro{
+
+  margin-top: 1px;
+  height: 400px;
+  background-color: orangered;
+  display: flex;
+}  
+
+
+#intro_vc{
+  height: 230px; 
+  margin-top: -70px;
+}
+
+.quoteicon{
+  margin: 14.7% 0px 0px 300px;
+  scale: 5;
+}  
+
+.quoteicon2{
+  margin: 17.8% 0px 0px 40px;
+  scale: 5;
+}  
+
+#vc_intro_desc
+{
+  width: 500px;
+  color: white;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin: 50px 50px;
+}  
+
+#vc_intro_photo
+{
+  margin: 120px 0px 0px 80px;
+
+  height: 500px;
+  width: 500px;
+}   
+
+#president_intro
+{
+  display: flex;
+}  
+
+#president_intro_photo
+{
+  margin: 50px 0px 0px 300px;
+}  
+
+#president_intro_desc
+{
+  margin: 50px 100px 0px 50px;
+  width: 800px;
+  font-size: 20px;
+  line-height: 25px;
+  color: grey;
+}  
+
+.head{
+  margin-top: 50px;
+  font-size: 60px; 
+  font-weight: bold; 
+  color: orangered; text-align: center; 
+  text-transform: uppercase;
+  font-family: sans-serif;  
+}  
+
+#pics{
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+
+}  
+
+video{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -60px;
+  height: 500px;
+  width: 600px;
+}  
+
+#footer{
+  margin: 50px 100px 50px 200px;
+  display: flex;
+  height: 300px;
+  justify-content:space-evenly;
+  box-shadow: 0px 10px 20px 0px lightgray;
+  
+
+}  
+
+.border{
+  margin-top: 20px;
+}  
+
+
+.fotter_img{
+  color: orangered;
+
+}  
+
+.fotter_text
+{
+  color: orangered;
+  font-size: 20px;
+  width: 100px;
+}  
+
+
+
+
+@media(max-width:600px)
+{
+
+  article{
+    margin-left: 00px;
+    /* display: grid; */
+    /* grid-template-columns: auto; */
+  }
+
+  .tech{
+    height: 250px;
+  }
+
+  /* .block{
+    margin-right: 50px;
+  } */
+
+  .block *{
+    margin-left: 5px;
+    width: 180px;
+    /* width: ; */
+  }
+
+  .tech >div>img{
+    /* height: 20px; */
+    width: 150px;
+  }
+
+
+  #pics{
+    grid-template-columns: auto auto auto;
+  }
+  .icon_size{
+    padding-right:5px;
+  }
+
+  #footer{
+    display: grid;
+    grid-template-columns: auto;
+    height: fit-content;
+    width: fit-content;
+  }
+
+  .Admission{
+    margin-left: 120px;
+  }
+
+  article{
+    grid-template-columns: auto;
+  }
+
+  #vc_intro{
+    /* margin-right: 50px; */
+    height: 700px;
+    display: block;
+  }
+
+  video{
+    height: 450px;
+    width: 500px;
+  }
+
+  .quoteicon{
+
+    margin-left: 30px;
+  }
+
+  #vc_intro_desc{
+    margin: -40px 0px 0px 75px;
+    width: 450px;
+  }
+
+  #vc_intro_photo{
+    margin: 100px 70px 0px 0px;
+    
+  }
+
+  #intro_vc{
+    width: 430px;
+    height: 250px;
+    margin-left: 20px;
+  }
+
+  .quoteicon2{
+    margin: -500px 0px 0px 480px;
+    padding-bottom: 176px;
+  }
+
+  #president_intro{
+    display: block;
+  }
+
+  #president_intro_photo{
+    margin:50px 0px 0px 130px
+  }
+
+  #president_intro_desc
+  {
+    margin: 50px 70px 0px 30px;
+    width: 500px;
+  }
+
+  #vc_img{
+    margin: 80% 0 0 32.5%;
+
+  }
+
+  #vc_desc
+  {
+    margin: 20px 0px 0px 150px;
+  }
+
+  .dot{
+    margin: 100px 0px 0px 0px;
+
+  }
+
+  .grp{
+    margin-left: 50px;
+  }
+
+  #logo_nav {
+
+    padding: 40px 0px 0px 15px;
+
+  }
+
+  #univ_name{
+    margin-top: 0px;
+    padding-bottom: 20px;
+  }
+
+  #nav2{
+    display: none;
+  }
+
+  header{
+    height: 110px;
+  }
+
+
+}
+
+@media(max-width: 1000px)
+{
+
+
+  #nav_hide{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin-left: auto;
+
+    
+  }
+
+  #nav_hide > p{
+   margin-top: 2px;
+  }
+
+  #nav1{
+    display: none;
+  }
+
+  .menu{
+
+    font-size: 30px;
+    color: white;
+    float: right;
+
+  }
+
+
+
+ 
 }
 
