@@ -1,114 +1,378 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-      }
 
-      header {
-        background-color: orangered;
-        height: 100px;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Activity</title>
 
-      #logo_nav {
-        padding: 40px 0px 0px 100px;
-        display: flex;
-      }
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="UxEXPGR9DxsKACRNZ2cRSRYBKzogOysN0fCN3MXzmekt11i1tmtvWbrR">
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/images/favicon/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/manifest/app.json">
 
-      #univ_name {
-        text-transform: uppercase;
-        color: white;
-        margin-top: 3px;
-        padding-left: 15px;
-        font-size: 25px;
-      }
+<meta name="theme-color" content="#528DD7">
+<meta id="meta-application-name" name="application-name" content="Find the Perfect Icon for Your Project | Font Awesome" />
+<meta id="meta-description" name="description" content="Search all the icons and match your project with a look and feel that&#39;s just right, including the all-new Sharp Solid Icons, now available in Font Awesome 6." />
+<meta id="meta-keywords" name="keywords" content="icons,vector icons,svg icons,free icons,icon font,webfont,desktop icons,svg,font awesome,font awesome free,font awesome pro" />
 
-      nav {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto auto;
-        background-color: black;
-        opacity: 0.5;
-        color: white;
-        font-size: 18px;
-        height: 40px;
-        text-align: center;
-        padding-top: 15px;
-        position: sticky;
-        margin-top: 10px;
-      }
+<!-- Schema.org markup for Google+ -->
+<meta id="meta-item-name" itemprop="name" content="Find the Perfect Icon for Your Project | Font Awesome" />
+<meta id="meta-item-description" itemprop="description" content="Search all the icons and match your project with a look and feel that&#39;s just right, including the all-new Sharp Solid Icons, now available in Font Awesome 6." />
+<meta id="meta-item-image" itemprop="image" content="https://img.fortawesome.com/1ce05b4b/open-graph-search.png" />
+<link rel="canonical" href="https://fontawesome.com" />
 
-      #technology {
-        max-height: 0;
-        overflow: hidden;
-        opacity: 0;
-        transition: max-height 0.5s , opacity 0.5s ;
-      }
+<!-- Twitter Card data -->
+<meta id="twt-card" name="twitter:card" content="summary" />
+<meta id="twt-site" name="twitter:site" content="@fontawesome" />
+<meta id="twt-title" name="twitter:title" content="Find the Perfect Icon for Your Project | Font Awesome" />
+<meta id="twt-description" name="twitter:description" content="Search all the icons and match your project with a look and feel that&#39;s just right, including the all-new Sharp Solid Icons, now available in Font Awesome 6." />
+<meta id="twt-creator" name="twitter:creator" content="@fontawesome" />
+<meta id="twt-image" name="twitter:image" content="https://img.fortawesome.com/1ce05b4b/open-graph-search.png" />
 
-      #technology:target {
-        max-height: 500px; /* Adjust based on content */
-        opacity: 1;
-      }
+<!-- Open Graph data -->
+<meta id="og-title" property="og:title" content="Find the Perfect Icon for Your Project | Font Awesome" />
 
-      #technology div {
-        display: flex;
-        background-color: black;
-        color: white;
-      }
+<meta id="og-type" property="og:type" content="website" />
+<meta id="og-url" property="og:url" content="https://fontawesome.com" />
+<meta id="og-image" property="og:image" content="https://img.fortawesome.com/1ce05b4b/open-graph-search.png" />
+<meta id="og-description" property="og:description" content="Search all the icons and match your project with a look and feel that&#39;s just right, including the all-new Sharp Solid Icons, now available in Font Awesome 6." />
 
-      #technology img {
-        height: 50px;
-        margin: 10px;
-      }
 
-      #technology ul {
-        margin-left: 100px;
-      }
+  <link
+    rel="stylesheet"
+    data-purpose="Layout StyleSheet"
+    title="Web Awesome"
+    href="/css/app-wa-4605c815f1874757bc9ac33aa114fb0f.css?vsn=d"
+  >
 
-      #technology ul li {
-        list-style: none;
-        margin-bottom: 5px;
-      }
-    </style>
-  </head>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
+    >
 
-  <body>
-    <header>
-      <div id="logo_nav">
-        <img src="./images/ddu_logo.png" alt="ddu_logo" style="height: 35px; width: 35px;">
-        <span id="univ_name">Dharmsinh Desai University</span>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-thin.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-solid.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-regular.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-duotone-light.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-thin.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-solid.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-regular.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/sharp-light.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-thin.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-regular.css"
+    >
+
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.7.2/css/duotone-light.css"
+    >
+</head>
+
+<body>
+
+  <header>
+
+    <div id="logo_nav">
+
+      <img src="./images/ddu_logo.png" alt="ddu_logo" style="height: 35px; width: 35px;">
+      <span id="univ_name">Dharmsinh desai University</span>
+
+      <div id="nav_hide">
+        <i class=" menu fa-light fa-bars"></i>
+        <p style="color: white; ">MENU</p>
+
+
       </div>
-    </header>
 
-    <nav>
-      <a href="#technology">Technology</a>
-    </nav>
-
-    <div id="technology">
-      <div>
-        <div>
-          <img src="./images/ddu_logo.png" alt="dduimg">
+      <div id="nav1">
+        <span>NIRF</span>
+        <span>IQAC</span>
+        <span>Excellence Centers</span>
+        <span>DDU Connect</span>
+        <span>Contact Us</span>
+        <input type="text" name="search" id="search" style="margin-top: -5px; height: 25px;" placeholder="search">
+        <div id="searchicon">
+          <i class="fa-solid fa-magnifying-glass" style="color: black; text-align: center; margin-top: 5px;"></i>
         </div>
+        
+
+      </div>
+
+    </div>
+
+
+  </header>
+  
+  
+  <ul id="nav2">
+    <li><a href="#Technology">DDU Advantage</a></li>
+    <li><a href="#Technology">University</a></li>
+    <li>
+      <a href="#Technology">Technology</a>
+    </li>
+    <li><a href="#Technology">Dental Science</a></li>
+    <li><a href="#Technology">Pharmacy</a></li>
+    <li><a href="#Technology">Mgmt & Info Science</a></li>
+    <li><a href="#Technology">Medical Science</a></li>
+  </ul>
+
+
+  
+  <div id="Technology" style="margin-top: -30px;">
+    <div >
+      <i class=" techicon fa-solid fa-gear"></i>
+      
+      <div  class="tech">
         <div>
-          <ul>
+          <img src="./images/photo6.jfif" alt="ddu image"  id="tec_img">
+        </div>
+    
+        <div class="block" >
+          <ul style="border-right: 1px solid white; margin-right: -30px; margin-top: 10px;">
             <li>Overview</li>
-            <li>Academics</li>
-            <li>Admissions</li>
-            <ul>
+            <li>The Team</li>
+            <li>Department</li>
+            <ul >
               <li>Computer Engineering</li>
               <li>Chemical Engineering</li>
-              <li>Electrical Engineering</li>
+              <li>Civil Engineering</li>
+              <li>Information Technology</li>
               <li>Mechanical Engineering</li>
-              <li>Biotechnology</li>
-              <li>Industrial Engineering</li>
             </ul>
+          </ul>
+    
+        </div>
+    
+        <div class="block" style="margin-top: 20px; margin-left: 25px;">
+          <ul >
+            <li>Program & Fee Structure</li>
+            <li>Infrastructure</li>
+            <li>Library</li>
+            <li>Placement and Careers</li>
+            <li>Academic Calender</li>
+            <li>Technology Film</li>
+            <li>Alumni</li>
           </ul>
         </div>
       </div>
+  
     </div>
-  </body>
+  </div>
+  
+  <div id="scroll_up">
+    <i class="fa-solid fa-arrow-up" style="color: white; font-size: 30px; margin: 5px 0px 0px 8px;"></i>
+  </div>
+
+
+  <div id="front_img">
+
+    <img src="./images/VC_photo.png" alt="Vice Chanceler Photo" id="vc_img">
+
+    <p id="vc_desc"> Dr.H.M Desai, our beloved Vice Chancelor awarded with Padma Shri by the President of India</p>
+
+    <section class="grp">
+      <span class="dot" style="background-color: orangered;"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </section>
+
+  </div>
+
+
+  <article>
+    <section class="ddu_adv">
+      <i class="icon_size fa-solid fa-graduation-cap "></i>
+      <p class="adv_score">35+</p>
+      <p class="adv_desc">Courses</p>
+
+    </section>
+    <section class="ddu_adv">
+      <i class="icon_size fa-solid fa-user-tie"></i>
+      <p class="adv_score">Healthy</p>
+      <p class="adv_desc">Placement Record</p>
+
+    </section>
+
+    <section class="ddu_adv">
+      <i class=" icon_size fa-solid fa-book"></i>
+      <p class="adv_score">50+ <span style="font-size: 40px;">years</span></p>
+      <p class="adv_desc">of experience in education</p>
+
+    </section>
+
+    <section class="ddu_adv">
+      <i class="icon_size fa-solid fa-book"></i>
+      <p class="adv_score">50+</p>
+      <p class="adv_desc">Major and Minor Research Projects in Last five years</p>
+
+    </section>
+
+    <section class="ddu_adv">
+      <i class="icon_size fa-solid fa-building-columns"></i>
+      <p class="adv_score">42 <span style="font-size: 40px;">acre</span></p>
+      <p class="adv_desc">sprawling campus</p>
+
+    </section>
+  </article>
+
+
+  <div id="vc_intro">
+
+    <i class=" quoteicon fa-solid fa-quote-left"></i>
+    <div id="vc_intro_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque porro illum explicabo,
+      ratione nostrum placeat labore, in molestiae ea laborum corporis, temporibus dolor delectus quasi beatae.
+      Voluptatum adipisci officiis earum!
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum beatae voluptates ex ullam fugiat vitae.
+      Ratione harum voluptatibus, dolorem illo maiores, nisi, nihil dicta atque voluptas eius qui asperiores odio.
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, quas sit incidunt, sunt beatae nesciunt
+      voluptatum esse nihil quibusdam reprehenderit eaque? Alias harum, in nesciunt ea sapiente doloribus repellat sed.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis magni natus maiores molestias nostrum soluta
+      repellendus explicabo cumque illo totam odit deserunt ducimus commodi exe
+    </div>
+    <div id="vc_intro_photo">
+      <img src="./images/vc_intro_img.png" alt="vc_intro_img" id="intro_vc">
+    </div>
+    <i class=" quoteicon2 fa-solid fa-quote-right"></i>
+
+  </div>
+
+  <div id="president_intro">
+    <div id="president_intro_photo">
+      <img src="./images/ddu_president.png" alt="ddu_president">
+    </div>
+    <div id="president_intro_desc">
+      <strong style="color: black;">Meet the President od DDU</strong>
+      <br>
+      <br>
+      <p style="margin-top: -15px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus dolorem numquam
+        eius exercitationem, minus in recusandae aliquid atque sit culpa? Eligendi, odio odit pariatur molestiae quis
+        ipsa nostrum dicta consequuntur consectetur explicabo possimus totam dolores accusantium suscipit sapiente
+        voluptate similique. Sunt odit reprehenderit sit, cumque reiciendis non fuga voluptatum magni
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt distinctio temporibus suscipit odit nisi, ab
+        delectus consequatur omnis, eum aliquam cumque unde enim, ipsa ex. Excepturi, quibusdam unde dignissimos eos
+        dolores odit eveniet facilis ut modi itaque. Delectus dicta culpa deleniti accusantium, magnam neque quas
+        impedit. Ducimus laborum corporis doloribus? Ipsum quo, veritatis suscipit neque cupiditate dicta nemo mollitia
+        ullam quaerat aspernatur in expedita accusantium alias
+      </p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, maiores. Ullam ipsum minima animi tempore
+        natus dignissimos nemo expedita iure tempora, blanditiis consectetur vel? Consequatur molestias quibusdam
+        repellat mollitia unde repudiandae illo aspernatur cumque eos optio.
+
+      </p>
+    </div>
+  </div>
+
+  <div>
+    <p class="head">Pictures and Gallery</p>
+    <div id="pics">
+      <img src="./images/new/photo11.jpg" alt="photo1">
+      <img src="./images/new/photo21.jpg" alt="photo2">
+      <img src="./images/new/photo21.jpg" alt="photo2">
+      <img src="./images/new/photo31.jpg" alt="photo3">
+      <img src="./images/new/photo41.jpg" alt="photo4">
+      <img src="./images/new/photo51.jpg" alt="photo5">
+      <img src="./images/new/photo61.jpg" alt="photo6">
+      <img src="./images/new/photo71.jpg" alt="photo7">
+      <img src="./images/new/photo41.jpg" alt="photo4">
+      <img src="./images/new/photo51.jpg" alt="photo5">
+      <img src="./images/new/photo61.jpg" alt="photo6">
+      <img src="./images/new/photo71.jpg" alt="photo7">
+      <img src="./images/new/photo91.jpg" alt="photo9">
+      <img src="./images/new/photo101.jpg" alt="photo10">
+      <img src="./images/new/photo111.jpg" alt="photo11">
+      <img src="./images/new/photo51.jpg" alt="photo5">
+      <img src="./images/new/photo61.jpg" alt="photo6">
+      <img src="./images/new/photo71.jpg" alt="photo7">
+      <img src="./images/new/photo91.jpg" alt="photo9">
+      <img src="./images/new/photo101.jpg" alt="photo10">
+
+    </div>
+  </div>
+
+    <div>
+      <p class="head">University film</p>
+
+      <video  src="./images/mov_bbb.mp4" controls type="video/mp4">
+          <caption>DDU Video</caption>
+          <track kind="subtitles" src="./images/subtitle.vtt"/>
+          Your Browser does not support video
+      </video>
+    </div>
+
+    <div id="footer">
+      <div class="border Admission" >
+        <i class="icon_size fa-solid fa-graduation-cap " style="color: orangered; margin-top: 105px;"></i>
+        <p class="fotter_text" style="margin: 50px 0px 0px -49px;">Admission 2025-2026</p>
+      </div>
+
+      <div class="border">
+        <img src="./images/result.jfif" alt="result">
+        <p class="fotter_text" style="margin-left: 64px;">Examination Results</p>
+        
+      </div>
+
+      <div class="border">
+        <img src="./images/naac.png" alt="naac">
+        <p class="fotter_text" style="margin-left: 75px;">NAAC Accredited</p>
+      </div>
+
+      <div class="border">
+        <img src="./images/nirf.png" alt="nirf">
+        <p class="fotter_text" style="margin-left: 74px;">NIRF Data</p>
+      </div>
+
+    </div>
+
+
+</body>
+
 </html>
