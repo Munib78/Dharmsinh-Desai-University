@@ -1,53 +1,54 @@
-*{
+* {
   padding: 0;
-  margin:0;
-  
+  margin: 0;
+
 }
 
-header{
-  background-color: orangered;  
+header {
+  background-color: orangered;
   height: 100px;
+  position: fixed;
+  width: 100%;
 }
 
-#logo_nav{
-  padding: 40px 0px 0px 100px; 
+#logo_nav {
+  padding: 40px 0px 0px 100px;
   display: flex;
 }
 
-#univ_name{
-  text-transform: uppercase; 
-  color: white; 
-  margin-top: 3px; 
-  padding-left: 15px; 
+#univ_name {
+  text-transform: uppercase;
+  color: white;
+  margin-top: 3px;
+  padding-left: 15px;
   font-size: 25px;
 }
 
-#nav1{
-  margin: 3px 0px 0px 150px; 
-  display: grid; 
-  grid-template-columns: auto auto auto auto auto auto auto; 
+#nav1 {
+  margin: 3px 0px 0px 150px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
   width: 750px;
   color: white;
   font-size: 20px;
 }
 
-#nav_hide{
+#nav_hide {
   display: none;
 }
 
-.menu{
+.menu {
   color: orangered;
 }
 
-#searchicon{
+#searchicon {
   background-color: rgb(247, 247, 247);
   margin: -4px 10px 9px 0px;
   text-align: center;
 }
 
 
-.techicon
-{
+.techicon {
   border: 2px solid red;
   justify-content: center;
   margin: 10px 0px 0px 300px;
@@ -73,8 +74,8 @@ header{
   opacity: 1;
 }
 
-.tech{
-  
+.tech {
+
   display: flex;
   background-color: black;
   height: 13.4rem;
@@ -84,8 +85,7 @@ header{
 
 }
 
-.block *
-{
+.block * {
   margin-left: 20px;
   opacity: 1;
   margin-right: 20px;
@@ -94,22 +94,25 @@ header{
 }
 
 
-ul{
+ul {
+  /* display: block; */
   list-style-type: none;
-  margin-top: 0px;  
+  margin-top: 80px;
   padding-top: 0;
-overflow: hidden;
-background-color: black;
-opacity: 0.5;
-position: sticky;
-top: 0;
-width: 100%;
+  overflow: hidden;
+  background-color: black;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  /* height: fit-content; */
 }
 
-li{
+li {
   display: inline-block;
- 
-}  
+
+}
 
 li * {
   display: inline-block;
@@ -120,24 +123,57 @@ li * {
   margin-left: 110px;
   opacity: 1;
 
-}  
+}
 
-nav{
-  display: grid; 
-  grid-template-columns: auto auto auto auto auto auto auto auto auto; 
-  background-color: black; 
-  opacity: 0.5; 
-  color: white; 
-  font-size: 18px; 
-  height: 40px; 
-  text-align: center; 
+nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+  font-size: 18px;
+  height: 40px;
+  text-align: center;
   padding-top: 15px;
   top: 0px;
   position: sticky;
   margin-top: 10px;
-}  
+}
 
-#front_img{
+#slider {
+  margin-top: 100px;
+  display: flex;
+  /* Arrange slides in a row */
+  overflow-x: scroll;
+  overflow-y: hidden;
+  /* Remove scrolling bars */
+  scroll-behavior: smooth;
+  /* Smooth scrolling */
+  width: 100%;
+  /* Adjust as per your container's width */
+  height: 800px;
+  /* Adjust as per your desired height */
+  position: relative;
+  z-index: 1;
+  /* Ensure proper positioning */
+}
+
+.slide {
+  flex: 0 0 100%;
+  /* Each slide takes full width of the container */
+}
+
+.slide img {
+  width: 100%;
+  /* Make the image fill the slide */
+  height: 800px;
+  /* Adjust height as per your design */
+  /* object-fit: cover; */
+  /* Ensure the image covers the area without distortion */
+}
+
+
+#front_img {
   height: 900px;
   background-image: url(../images/ddu_img.jfif);
   background-repeat: no-repeat;
@@ -146,13 +182,13 @@ nav{
   background-position: center;
 }
 
-#vc_img{
+#vc_img {
   margin: 25% 0 0 23%;
   height: 300px;
   width: 250px;
-}  
+}
 
-#vc_desc{
+#vc_desc {
   opacity: 0.5;
   background-color: black;
   color: white;
@@ -164,253 +200,245 @@ nav{
   letter-spacing: 1px;
   line-height: 20px;
   font-family: sans-serif;
-}  
+}
 
-section{
+section {
   text-align: center;
   margin-top: -40px;
 
-}  
+}
 
 
-.dot{
+.dot {
   display: inline-block;
   height: 7px;
   width: 7px;
   border-radius: 50%;
   background-color: grey;
   border: 1px solid white;
-}  
+}
 
-.ddu_adv{
-  height: 220px; 
+.ddu_adv {
+  height: 220px;
   width: 550px;
   border-right: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
 
   margin-top: 30px;
-}  
+}
 
-.adv_score{
+.adv_score {
   padding-top: 40px;
   font-size: 70px;
   color: orangered;
   text-align: center;
-}  
+}
 
-.adv_desc{
+.adv_desc {
   text-align: center;
   color: grey;
   font-size: 15px;
   padding-bottom: 10px;
   margin-left: 170px;
   width: 200px;
-}  
+}
 
-article{
+article {
   display: grid;
   margin: 0px 100px 0px 100px;
   grid-template-columns: auto auto auto;
   font-family: sans-serif;
 
-}  
+}
 
-.icon_size{
+.icon_size {
   margin-top: 30px;
   color: lightgrey;
   scale: 6;
-}  
+}
 
-#vc_intro{
+#vc_intro {
 
   margin-top: 1px;
   height: 400px;
   background-color: orangered;
   display: flex;
-}  
+}
 
 
-#intro_vc{
-  height: 230px; 
+#intro_vc {
+  height: 230px;
   margin-top: -70px;
 }
 
-.quoteicon{
-  margin: 14.8% 0px 0px 300px;
+.quoteicon {
+  margin: 16.7% 0px 0px 300px;
   scale: 5;
-}  
+}
 
-.quoteicon2{
-  margin: 17.8% 0px 0px 40px;
+.quoteicon2 {
+  margin: 20.8% 0px 0px 40px;
   scale: 5;
-}  
+}
 
-#vc_intro_desc
-{
+#vc_intro_desc {
   width: 500px;
   color: white;
   line-height: 20px;
   letter-spacing: 1px;
   margin: 50px 50px;
-}  
+}
 
-#vc_intro_photo
-{
+#vc_intro_photo {
   margin: 120px 0px 0px 80px;
 
   height: 500px;
   width: 500px;
-}   
+}
 
-#president_intro
-{
+#president_intro {
   display: flex;
-}  
+}
 
-#president_intro_photo
-{
+#president_intro_photo {
   margin: 50px 0px 0px 300px;
-}  
+}
 
-#president_intro_desc
-{
+#president_intro_desc {
   margin: 50px 100px 0px 50px;
   width: 800px;
   font-size: 20px;
   line-height: 25px;
   color: grey;
-}  
+}
 
-.head{
+.head {
   margin-top: 50px;
-  font-size: 60px; 
-  font-weight: bold; 
-  color: orangered; text-align: center; 
+  font-size: 60px;
+  font-weight: bold;
+  color: orangered;
+  text-align: center;
   text-transform: uppercase;
-  font-family: sans-serif;  
-}  
+  font-family: sans-serif;
+}
 
-#pics{
+#pics {
   display: grid;
   margin-top: 20px;
   grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
 
-}  
+}
 
-video{
+video {
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: -60px;
   height: 500px;
   width: 600px;
-}  
+}
 
-#footer{
+#footer {
   margin: 50px 100px 50px 200px;
   display: flex;
   height: 300px;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   box-shadow: 0px 10px 20px 0px lightgray;
-  
 
-}  
 
-.border{
+}
+
+.border {
   margin-top: 20px;
-}  
+}
 
 
-.fotter_img{
+.fotter_img {
   color: orangered;
 
-}  
+}
 
-.fotter_text
-{
+.fotter_text {
   color: orangered;
   font-size: 20px;
   width: 100px;
-}  
+}
 
 
-@media(max-width:700px)
-{
-  #pics{
+@media(max-width:700px) {
+  #pics {
     grid-template-columns: auto auto auto;
   }
 
-  #footer{
+  #footer {
     display: grid;
     grid-template-columns: auto;
     height: fit-content;
   }
 
-  .Admission{
+  .Admission {
     margin-left: 120px;
   }
 
-  article{
+  article {
     grid-template-columns: auto;
   }
 
-  #vc_intro{
+  #vc_intro {
     height: 700px;
     display: block;
   }
 
 
-  .quoteicon{
+  .quoteicon {
 
     margin-left: 50px;
   }
 
-  #vc_intro_desc{
+  #vc_intro_desc {
     margin: -40px 0px 0px 100px;
     width: 450px;
   }
 
-  #vc_intro_photo{
+  #vc_intro_photo {
     margin: 100px 50px 0px 0px;
-    
+
   }
 
-  #intro_vc{
+  #intro_vc {
     width: 430px;
     height: 250px;
     margin-left: 70px;
   }
 
-  .quoteicon2{
+  .quoteicon2 {
     margin: -500px 0px 0px 530px;
     padding-bottom: 176px;
   }
 
-  #president_intro{
+  #president_intro {
     display: block;
   }
 
-  #president_intro_photo{
-    margin:50px 0px 0px 180px
+  #president_intro_photo {
+    margin: 50px 0px 0px 180px
   }
 
-  #president_intro_desc
-  {
+  #president_intro_desc {
     margin: 50px 50px 0px 50px;
     width: 500px;
   }
 
-  #vc_img{
+  #vc_img {
     margin: 64% 0 0 32.5%;
 
   }
 
-  #vc_desc
-  {
+  #vc_desc {
     margin: 20px 0px 0px 190px;
   }
 
-  .dot{
+  .dot {
     margin-top: 100px;
 
   }
@@ -421,26 +449,25 @@ video{
 
   }
 
-  #univ_name{
+  #univ_name {
     margin-top: 0px;
     padding-bottom: 20px;
   }
 
-  #nav2{
+  #nav2 {
     display: none;
   }
 
-  header{
+  header {
     height: 140px;
   }
 
 }
 
-@media(max-width: 1000px)
-{
+@media(max-width: 1000px) {
 
 
-  #nav_hide{
+  #nav_hide {
 
     display: flex;
     flex-direction: column;
@@ -448,18 +475,18 @@ video{
     align-items: center;
     margin-left: auto;
 
-    
+
   }
 
-  #nav_hide > p{
-   margin-top: 2px;
+  #nav_hide>p {
+    margin-top: 2px;
   }
 
-  #nav1{
+  #nav1 {
     display: none;
   }
 
-  .menu{
+  .menu {
 
     font-size: 30px;
     color: white;
@@ -467,18 +494,17 @@ video{
 
   }
 
-  .tech{
+  .tech {
     height: 250px;
   }
 
-  .tech >div>img{
+  .tech>div>img {
     height: 230px;
     width: 230px;
   }
 
-  .block *{
+  .block * {
     margin-left: 13px;
   }
- 
-}
 
+}
