@@ -51,7 +51,7 @@ header {
 .techicon {
   border: 2px solid red;
   justify-content: center;
-  margin: 10px 0px 0px 300px;
+  margin: -100px 0px 0px 300px;
   border-radius: 50%;
   scale: 1.5;
 
@@ -62,16 +62,17 @@ header {
   /* max-width: 0; */
   overflow: hidden;
   opacity: 0;
-  /* transition-property: he;
+  transition-property: height;
   transition-duration: 2s;
   transition-timing-function: linear;
-  transition-delay: 1s; */
+  transition-delay: 1s;
 }
 
 #Technology:target {
   /* max-width: fit-content; */
   height: fit-content;
   opacity: 1;
+  z-index: 10;
 }
 
 .tech {
@@ -82,6 +83,7 @@ header {
   color: white;
   font-weight: bold;
   border: 2px solid red;
+  margin-top: 130px;
 
 }
 
@@ -90,14 +92,16 @@ header {
   opacity: 1;
   margin-right: 20px;
   display: block;
+  margin-top: 10px;
+  /* padding-top: 50px; */
 
 }
 
 
-ul {
+#nav2 {
   /* display: block; */
   list-style-type: none;
-  margin-top: 80px;
+  margin-top: 115px;
   padding-top: 0;
   overflow: hidden;
   background-color: black;
@@ -109,12 +113,12 @@ ul {
   /* height: fit-content; */
 }
 
-li {
+#nav2>li {
   display: inline-block;
 
 }
 
-li * {
+#nav2>li * {
   display: inline-block;
   color: white;
   text-align: center;
@@ -143,24 +147,24 @@ nav {
 #slider {
   margin-top: 100px;
   display: flex;
-  /* Arrange slides in a row */
+
   overflow-x: scroll;
   overflow-y: hidden;
-  /* Remove scrolling bars */
+
   scroll-behavior: smooth;
-  /* Smooth scrolling */
+
   width: 100%;
-  /* Adjust as per your container's width */
+
   height: 800px;
-  /* Adjust as per your desired height */
+
   position: relative;
   z-index: 1;
-  /* Ensure proper positioning */
+
 }
 
 .slide {
   flex: 0 0 100%;
-  /* Each slide takes full width of the container */
+
 }
 
 .slide img {
